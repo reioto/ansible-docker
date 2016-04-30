@@ -1,0 +1,6 @@
+---
+- name: install docker repo
+  copy: src=docker.repo dest=/etc/yum.repos.d/docker.repo force=no    
+
+- name: install docker-engine
+  yum: name=docker-engine state=latest

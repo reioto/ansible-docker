@@ -1,0 +1,12 @@
+---
+- name: install epel-repo
+  yum: name=epel-release state=present
+
+- name: install python-pip
+  yum: name=python-pip state=present
+  notify: 
+  - pip upgrade
+
+- name: install docker-compose
+  pip: name=docker-compose state=present
+

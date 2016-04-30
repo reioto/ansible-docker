@@ -1,0 +1,6 @@
+---
+- hosts: all
+  user: root
+  roles:
+  - docker-engine
+  - docker-compose

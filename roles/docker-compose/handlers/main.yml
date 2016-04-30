@@ -1,0 +1,4 @@
+---
+- name: pip upgrade
+  shell: pip install --upgrade pip
+
